@@ -3038,7 +3038,7 @@ def get_web_interface():
             <div class="chat-container">
                 <div class="messages" id="messages">
                     <div class="example-questions">
-                        <div class="welcome-message">
+                         <div class="welcome-message">
                             👋 欢迎使用基于FastMCP框架的 HUTB 模拟器智能助手！集成 HUTB 仿真控制。
                             <br><br>
                             🔧 <strong>技术特色</strong>：本助手使用FastMCP装饰器实现工具定义，提供类型安全、自动化的MCP体验！
@@ -3058,8 +3058,22 @@ def get_web_interface():
                                 🚗 生成车辆
                             </div>
                         </div>
-                    </div>
-                </div>
+
+                        <!-- SUMO 功能（新增） -->
+                        <div style="margin-top: 15px; border-top: 2px dashed #ff6b35; padding-top: 10px;">
+                            <h3 style="color: #ff6b35;">🚦 SUMO 交通仿真（新增功能）</h3>
+                            <div class="examples-grid">
+                                <div class="example-item" style="border-left-color: #ff6b35;" onclick="askExample('生成一个3x3网格路网，跑200秒，每2秒发一辆车')">
+                                    🚦 生成3x3网格路网
+                                </div>
+                                <div class="example-item" style="border-left-color: #ff6b35;" onclick="askExample('生成一个4x4网格路网，跑300秒，每3秒发一辆车')">
+                                    🚦 生成4x4网格路网
+                                </div>
+                                <div class="example-item" style="border-left-color: #ff6b35;" onclick="askExample('生成一个5x5网格路网，跑500秒，每3秒发一辆车')">
+                                    🚦 生成5x5网格路网
+                                </div>
+                            </div>
+                        </div>
 
                 <div class="loading" id="loading">
                     <div class="loading-content">
