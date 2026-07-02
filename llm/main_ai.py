@@ -3060,21 +3060,17 @@ def get_web_interface():
                         </div>
 
                         <!-- SUMO 功能（新增） -->
-                        <div style="margin-top: 15px; border-top: 2px dashed #ff6b35; padding-top: 10px;">
-                            <h3 style="color: #ff6b35;">🚦 SUMO 交通仿真（新增功能）</h3>
-                            <div class="examples-grid">
+                         <div style="margin-top: 15px; border-top: 2px dashed #ff6b35; padding-top: 10px;">
+                           <h3 style="color: #ff6b35;">🚦 SUMO 交通仿真（新增功能）</h3>
+                             <div class="examples-grid">
                                 <div class="example-item" style="border-left-color: #ff6b35;" onclick="askExample('生成一个3x3网格路网，跑200秒，每2秒发一辆车')">
-                                    🚦 生成3x3网格路网
-                                </div>
-                                <div class="example-item" style="border-left-color: #ff6b35;" onclick="askExample('生成一个4x4网格路网，跑300秒，每3秒发一辆车')">
-                                    🚦 生成4x4网格路网
-                                </div>
-                                <div class="example-item" style="border-left-color: #ff6b35;" onclick="askExample('生成一个5x5网格路网，跑500秒，每3秒发一辆车')">
-                                    🚦 生成5x5网格路网
-                                </div>
-                            </div>
-                        </div>
-
+                         🚦 生成默认网格路网
+                          </div>
+                       </div>
+    <div style="margin-top: 8px; font-size: 0.85em; color: #666; text-align: center;">
+        💡 也支持自然语言自定义参数：<em>"生成4x4网格路网，跑300秒"</em> 或 <em>"生成5x5网格路网，跑500秒，每3秒发一辆车"</em>
+    </div>
+</div>
                 <div class="loading" id="loading">
                     <div class="loading-content">
                         <div class="loading-text">
